@@ -71,7 +71,7 @@ char fizzbuzz(int max_n = 100){
 
 
 int main() {
-  cout << fizzbuzz();
+  cout << fizzbuzz(20);
 }
 
 
