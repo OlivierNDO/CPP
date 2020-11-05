@@ -23,38 +23,14 @@ bool divisible_by(int numerator, int denominator) {
     return divisible;
 }
 
-/**
-    Prints "Fizz" if input argument is divisible by 3.
-    @param x integer to check for divisibility by 3.
-    @return 0.
-*/
-char fizz(int x){
-    if (divisible_by(x, 3)){
-        cout << "Fizz";
-    } else {
-        cout << x;
-    }
-    return 0;
-}
-
 
 /**
-    Prints "Buzz" if input argument is divisible by 5.
-    @param x integer to check for divisibility by 5.
+    Prints "Buzz" if divisible by 5, "Fizz" if divisible by 3, 
+    and "FizzBuzz" if divisible by 3 and 5 for a range of numbers.
+    @param max_n Maximum number in range. Defaults to 100.
     @return 0.
 */
-char buzz(int x){
-    if (divisible_by(x, 5)){
-        cout << "Buzz";
-    } else {
-        cout << x;
-    }
-    return 0;
-}
-
-
 char fizzbuzz(int max_n = 100){
-
     for (int i = 1; i <= max_n; i = i + 1){
         if (divisible_by(i, 3) && divisible_by(i, 5)) {
         cout << "FizzBuzz" << endl;
